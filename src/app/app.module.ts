@@ -1,20 +1,30 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { Navbar } from './navbar/navbar.component';
+import { ContactForm } from './contact/contact.component';
 import { ResumePagina } from './resume/resume.component';
+import { SkillBalkje } from './resume/skillbalkjes/skillbalkje.component';
+import { ContactService } from './services.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    Navbar,
-    ResumePagina
+    ResumePagina,
+    SkillBalkje,
+    ContactForm
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    ContactService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

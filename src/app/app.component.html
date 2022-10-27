@@ -7,9 +7,37 @@
   <title>Portfolio - Robbe van Hoppe</title>
 </head>
 <body>
-  <portfolio-navbar></portfolio-navbar>
-  <h1>Interactief Portfolio</h1>
-  <portfolio-ResumePagina></portfolio-ResumePagina>
-  
+  <nav>
+    <ul>
+        <li class="logo" id="baritem"><a href="https://www.pxl.be/">
+                <h3>PXL</h3>
+            </a></li>
+        <li id="baritem">
+                <h3 (click)="ClickResume()">Portfolio</h3>
+            </li>
+            <li id="baritem">
+                <h3 (click)="ClickProjects()">Projects</h3>
+            </li>
+            <li id="baritem">
+              <h3 ><a href="https://dino.robbevanhoppe.be/">Dino</a></h3>
+          </li>
+        <li id="baritem">
+                <h3 (click)="ClickContact()">Contact</h3>
+            </li>
+    </ul>
+  </nav>
+  <div class="mobielnav">
+    <a class="logobar">Robbe vH</a>
+    <div id="items" *ngIf="mobielNavIsClicked">
+      <a (click)="ClickProjects()">Projects</a>
+        <a href="./404.html">Contact Form</a>
+        <a href="https://www.pxl.be/">PXL Website</a>
+    </div>
+    <a id="burger" class="icon" (click)="DropDown()">
+        <em class="fa fa-bars"></em>
+    </a>
+</div>
+  <portfolio-ResumePagina *ngIf="resumeIsClicked"></portfolio-ResumePagina>
+  <portfolio-ContactPagina *ngIf="contactIsClicked"></portfolio-ContactPagina>
 </body>
 </html>
