@@ -1,0 +1,18 @@
+.skillbalk {
+    height: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    background-color: #4d4d4d;
+  }
+  
+  .skillload {
+    display: flex;
+    text-align: center;
+    color: #F0F1F2;
+    height: 20px;
+    width: 0%;
+    border-radius: 10px;
+    background-color: #5259D9;
+    align-items: center;
+    justify-content: center;
+  }

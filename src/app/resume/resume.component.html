@@ -19,34 +19,6 @@
 </head>
 
 <body>
-
-    <!-- navbar -->
-    <!-- <nav>
-        <ul>
-            <li class="logo" id="baritem"><a href="https://www.pxl.be/">
-                    <h1>PXL</h1>
-                </a></li>
-            <li id="baritem"><a href="https://portfolio.robbevanhoppe.be/">
-                    <h1>Portfolio</h1>
-                </a> </li>
-            <li id="baritem"><a href="./404.html">
-                    <h1>Contact</h1>
-                </a></li>
-        </ul>
-    </nav>
-
-    <div class="mobielnav">
-        <a href="./404.html/" class="logobar">Robbe vH</a>
-        <div id="items">
-            <a href="./404.html">Contact Form</a>
-            <a href="https://www.pxl.be/">PXL Website</a>
-        </div>
-        <a id="burger" class="icon" onclick="dropdown()">
-            <em class="fa fa-bars"></em>
-        </a>
-    </div>
- -->
-
     <!-- blad -->
     <div class="container">
 
@@ -169,9 +141,8 @@
                 <!-- Balkjes, ja deze komen half van W3 schools, maar de javascript is wel aangepast naar mijn eigen use case -->
                 <div class="hardsk">
                     <h3>HTML & CSS</h3>
-                    <div class="skillbalk" onmouseenter="move1()">
-                        <div id="skillbar1" class="skillload"></div>
-                    </div>
+                    <resume-skillbalkje></resume-skillbalkje>
+
 
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quo repellendus ratione magnam
@@ -185,9 +156,8 @@
 
                 <div class="hardsk">
                     <h3>C#</h3>
-                    <div class="skillbalk" onmouseenter="move2()">
-                        <div id="skillbar2" class="skillload"></div>
-                    </div>
+                    <resume-skillbalkje></resume-skillbalkje>
+
 
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quo repellendus ratione magnam
@@ -201,9 +171,7 @@
 
                 <div class="hardsk">
                     <h3>Data & SQL</h3>
-                    <div class="skillbalk" onmouseenter="move3()">
-                        <div id="skillbar3" class="skillload"></div>
-                    </div>
+                    <resume-skillbalkje></resume-skillbalkje>
 
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quo repellendus ratione magnam
@@ -220,8 +188,9 @@
             </div>
 
         </div>
-
     </div>
+
+
 
 </body>
 
@@ -266,7 +235,7 @@
         }
     }
 
-   // navbar
+    // navbar
     function dropdown() {
         var x = document.getElementById("items");
         var b = document.getElementById("burger");
@@ -278,10 +247,10 @@
             b.style.background = "#4d4d4d";
         } else {
             console.log("Open")
-            
+
             x.style.height = "120px"
             b.style.background = "#5259D9";
-        }  
+        }
 
         // var elem = document.getElementById("myLinks");
         // var height = elem.style.height;
@@ -300,7 +269,7 @@
     }
 
 
-    
+
 
 </script>
 
