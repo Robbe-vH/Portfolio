@@ -1,65 +1,20 @@
-<!-- <div class="wrapper-box">
-
-    <div class="container">
-
-        <h1 class="contact100-form-title">Get in Touch</h1>
-
-            <form class="form" [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
-                
-                <div class="form-group">
-                    <label for="Email">Email</label>
-                    <input type="text" class="form-control" placeholder="Enter email" formControlName="Email" />
-                </div>
-
-                <div class="form-group">
-                    <label for="fullname">Name</label>
-                    <input type="text" class="form-control" name="Fullname" placeholder="Full Name"
-                        formControlName="Fullname" />
-                </div>
-
-                <div class="form-group">
-                    <label for="comment">Comment</label>
-                    <textarea class="form-control textarea" formControlName="Comment" name="Comment"
-                        placeholder="Tell me Your story">
-              </textarea>
-                </div>
-
-                <div class="form-group">
-                    <button (mouseenter)="veranderKleur()" (mouseleave)="veranderKleur()" (click)="onSubmit(this.FormData)"
-                        [ngClass]="{'submitNormal' : kleurToggle, 'submitHover': !kleurToggle}" type="submit">
-                        Submit
-                    </button>
-                </div>
-
-            </form>
-
-    </div>
-</div> -->
-
 <div class="container">
-    <h2 class="text-center mb-5">Angular Contact Form Hosted On FireBase</h2>
-    <div class="row">
-        <div class="col-md-6 offset-md-3">
-            <form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
-                <div class="form-group">
-                    <label for="Email">Email</label>
-                    <input type="email" class="form-control" name="Email" aria-describedby="emailHelp"
-                        placeholder="Enter email" formControlName="Email">
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                        else.</small>
-                </div>
-                <div class="form-group">
-                    <label for="fullname">Full Name</label>
-                    <input type="text" class="form-control" name="Fullname" placeholder="Full Name"
-                        formControlName="Fullname">
-                </div>
-                <div class="form-group">
-                    <label for="comment">Comment</label>
-                    <textarea class="form-control" formControlName="Comment" name="Comment">
-    </textarea>
-                </div>
-                <button type="submit" class="btn btn-primary" [disabled]="!FormData.valid">Submit</button>
-            </form>
+    <form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
+        <h2 class="text-center mb-5">Contact</h2>
+        <div class="form-group">
+            <input type="email" class="form-control" name="Email" aria-describedby="emailHelp" placeholder="Enter email"
+                formControlName="Email">
+
         </div>
-    </div>
+        <div class="form-group">
+            <input type="text" class="form-control" name="Fullname" placeholder="Full Name" formControlName="Fullname">
+        </div>
+        <div class="form-group">
+            <textarea class="form-control commentarea" formControlName="Comment" name="Comment"
+                placeholder="Let me know what you think"></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="submit" [disabled]="!FormData.valid">Submit</button>
+        </div>
+    </form>
 </div>
