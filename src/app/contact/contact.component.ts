@@ -8,7 +8,6 @@ import { ContactService } from '../services.service';
   styleUrls: ['./contact.component.css']
 })
 export class ContactForm implements OnInit {
-  kleurToggle = true;
   FormData: FormGroup;
   constructor(private builder: FormBuilder, private contact: ContactService) { }
   ngOnInit() {
@@ -30,10 +29,5 @@ export class ContactForm implements OnInit {
     console.log({ error })
     })
     }
-
-  veranderKleur() {
-    this.kleurToggle = !this.kleurToggle;
-  }
-
 
 }
