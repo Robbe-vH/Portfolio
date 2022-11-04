@@ -7,77 +7,77 @@ body {
 }
 
 nav {
-    color: #F0F1F2;
-    box-shadow: 0px 0px 6px #2b2b2b;
-    background-color: #4d4d4d;
-    align-items: center;
-  }
-  
-  nav ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  
-  nav li {
-    color: #F0F1F2;
-    display: inline;
-    padding: 15px 20px 5px 20px;
-    transition: background-color 0.5s;
-  }
-  
-  nav li:hover {
-    background-color: #5259D9;
-    margin: 0;
-  }
-  
-  nav li a {
-    display: block;
-    color: #F0F1F2;
-    text-align: center;
-    text-decoration: none;
+  color: #F0F1F2;
+  box-shadow: 0px 0px 6px #2b2b2b;
+  background-color: #4d4d4d;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+nav li {
+  color: #F0F1F2;
+  display: inline;
+  padding: 15px 20px 5px 20px;
+  transition: background-color 0.5s;
+}
+
+nav li:hover {
+  background-color: #5259D9;
+  margin: 0;
+}
+
+nav li a {
+  display: block;
+  color: #F0F1F2;
+  text-align: center;
+  text-decoration: none;
+}
+
+.mobielnav {
+  width: 100%;
+  height: auto;
+  display: none;
+  overflow: hidden;
+  background-color: #4d4d4d;
+  position: relative;
+}
+
+.mobielnav a {
+  color: #F0F1F2;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.mobielnav a.icon {
+  background-color: #4d4d4d;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.mobielnav .logobar {
+  background-color: #5259D9;
+  color: #F0F1F2;
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    display: none;
   }
 
   .mobielnav {
-    width: 100%;
-    height: auto;
-    display: none;
-    overflow: hidden;
-    background-color: #4d4d4d;
-    position: relative;
-  }
-  
-  .mobielnav a {
-    color: #F0F1F2;
-    padding: 20px;
-    text-decoration: none;
-    font-size: 17px;
     display: block;
   }
-  
-  .mobielnav a.icon {
-    background-color: #4d4d4d;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  
-  .mobielnav .logobar {
-    background-color: #5259D9;
-    color: #F0F1F2;
-  }
-
-  @media only screen and (max-width: 600px) {
-    nav {
-      display: none;
-    }
-  
-    .mobielnav {
-      display: block;
-    }
-  }
+}

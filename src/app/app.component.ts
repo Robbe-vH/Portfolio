@@ -9,10 +9,10 @@ export class AppComponent {
   title = 'PortfolioWebsite';
 
   //homepage hier als enige op true zetten
-  resumeIsClicked = false;
+  resumeIsClicked = true;
   projectsIsClicked = false;
   mobielNavIsClicked = false;
-  contactIsClicked = true;
+  contactIsClicked = false;
 
   //Alle andere pagina's op false en zichzelf op true zetten
   ClickResume(): void {
