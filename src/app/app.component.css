@@ -30,6 +30,11 @@ nav li {
   transition: background-color 0.5s;
 }
 
+nav h3 {
+  width: 95px;
+  font-family: 'Roboto', sans-serif;
+}
+
 nav li:hover {
   background-color: #5259D9;
   margin: 0;

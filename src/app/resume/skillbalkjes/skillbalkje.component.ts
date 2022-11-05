@@ -1,4 +1,4 @@
-import { Component, Output } from "@angular/core";
+import { Component, Input } from "@angular/core";
 
 @Component({
     selector: 'resume-skillbalkje',
@@ -7,6 +7,7 @@ import { Component, Output } from "@angular/core";
 })
 export class SkillBalkje {
     divWidth = 0;
+    @Input() maxWidth:number;
     id = 0;
     portfolioIsClicked = false;
     contactIsClicked = false;
@@ -14,7 +15,7 @@ export class SkillBalkje {
     move(): void {
         console.log(this.divWidth);
         this.id = window.setInterval(() => { 
-            if (this.divWidth < 50) {
+            if (this.divWidth < this.maxWidth) {
             
                 this.divWidth++;
         }
