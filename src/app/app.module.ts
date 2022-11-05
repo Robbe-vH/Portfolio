@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { ContactForm } from './contact/contact.component';
 import { ResumePagina } from './resume/resume.component';
 import { SkillBalkje } from './resume/skillbalkjes/skillbalkje.component';
+import { ResumeTabel } from './resume/tabel/tabel.component';
 import { ContactService } from './services.service';
 
 @NgModule({
@@ -14,7 +15,8 @@ import { ContactService } from './services.service';
     AppComponent,
     ResumePagina,
     SkillBalkje,
-    ContactForm
+    ContactForm,
+    ResumeTabel
   ],
   imports: [
     BrowserModule,

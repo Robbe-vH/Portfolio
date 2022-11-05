@@ -1,0 +1,50 @@
+<div class="MottigeTabel">
+                    <table>
+                        <thead>
+                            <!-- header row -->
+                            <tr>
+                                <th>Company</th>
+                                <th>Years active</th>
+                                <th>Job Title</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr (mouseenter)="RijTc()">
+                                <td>Thai Cafe</td>
+                                <td>2020 - Now</td>
+                                <td>Driver & Bartender</td>
+                            </tr>
+                            <tr (mouseenter)="RijBpost()">
+                                <td>Bpost</td>
+                                <td>2021 -2021</td>
+                                <td>Student mailman</td>
+                            </tr>
+                            <tr (mouseenter)="RijPauwels()">
+                                <td>Profile Pauwels</td>
+                                <td>2013 - 2019</td>
+                                <td>Bike mechanic</td>
+                            </tr>
+                            <tr (mouseenter)="RijSpeel()">
+                                <td>Speelplein De Boomhut</td>
+                                <td>2021 - 2021</td>
+                                <td>Volunteer caretaker for children with disabilities</td>
+                            </tr>
+                            <tr (mouseenter)="RijKarting()">
+                                <td>Karting Lommel</td>
+                                <td>2017 - 2018</td>
+                                <td>Kart mechanic</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+
+                </div>
+
+                <div class="werkuitleg">
+                    <p *ngIf="TC"> yeeeet</p>
+                    <p *ngIf="Bpost"> bpost</p>
+                    <p *ngIf="Pauwels">pauwels</p>
+                    <p *ngIf="Speel">speelplein</p>
+                    <p *ngIf="Karting"> karting</p>
+                </div>
