@@ -121,22 +121,18 @@
                 <!-- Balkjes, ja deze komen half van W3 schools, maar de javascript is wel aangepast naar mijn eigen use case -->
                 <div class="hardsk">
                     <h3>HTML & CSS</h3>
-                    <resume-skillbalkje [maxWidth] = 50></resume-skillbalkje>
+                    <resume-skillbalkje [maxWidth]=50></resume-skillbalkje>
 
 
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quo repellendus ratione magnam
-                        at
-                        culpa natus aut animi, officiis doloribus rem, harum unde nobis delectus aliquid dignissimos
-                        nulla
-                        modi ut, illo debitis! Nostrum sint, eveniet sed, eos laborum praesentium odio nobis deserunt
-                        possimus officiis error quibusdam, aliquam maiores facilis minus.
+                        Web development is my main interest, I love designing websites and it has been my favorite
+                        subject in both high school and university.
                     </p>
                 </div>
 
                 <div class="hardsk">
                     <h3>C#</h3>
-                    <resume-skillbalkje [maxWidth] = 30></resume-skillbalkje>
+                    <resume-skillbalkje [maxWidth]=30></resume-skillbalkje>
 
 
                     <p>
@@ -151,7 +147,7 @@
 
                 <div class="hardsk">
                     <h3>Data & SQL</h3>
-                    <resume-skillbalkje [maxWidth] = 25></resume-skillbalkje>
+                    <resume-skillbalkje [maxWidth]=25></resume-skillbalkje>
 
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quo repellendus ratione magnam
@@ -170,83 +166,83 @@
         </div>
     </div>
 
-<script>
-    //hard skill balkjes
-    function move1() {
-        var elem = document.getElementById("skillbar1");
-        var width = elem.style.width;
-        var id = setInterval(frame, 10);
-        function frame() {
-            if (width < 50) {
-                width++;
-                elem.style.width = width + '%';
-                elem.innerHTML = width + " %";
+    <script>
+        //hard skill balkjes
+        function move1() {
+            var elem = document.getElementById("skillbar1");
+            var width = elem.style.width;
+            var id = setInterval(frame, 10);
+            function frame() {
+                if (width < 50) {
+                    width++;
+                    elem.style.width = width + '%';
+                    elem.innerHTML = width + " %";
+                }
             }
         }
-    }
 
-    function move2() {
-        var elem = document.getElementById("skillbar2");
-        var width = elem.style.width;
-        var id = setInterval(frame, 10);
-        function frame() {
-            if (width < 25) {
-                width++;
-                elem.style.width = width + '%';
-                elem.innerHTML = width + " %";
+        function move2() {
+            var elem = document.getElementById("skillbar2");
+            var width = elem.style.width;
+            var id = setInterval(frame, 10);
+            function frame() {
+                if (width < 25) {
+                    width++;
+                    elem.style.width = width + '%';
+                    elem.innerHTML = width + " %";
+                }
             }
         }
-    }
 
-    function move3() {
-        var elem = document.getElementById("skillbar3");
-        var width = elem.style.width;
-        var id = setInterval(frame, 10);
-        function frame() {
-            if (width < 40) {
-                width++;
-                elem.style.width = width + '%';
-                elem.innerHTML = width + " %";
+        function move3() {
+            var elem = document.getElementById("skillbar3");
+            var width = elem.style.width;
+            var id = setInterval(frame, 10);
+            function frame() {
+                if (width < 40) {
+                    width++;
+                    elem.style.width = width + '%';
+                    elem.innerHTML = width + " %";
+                }
             }
         }
-    }
 
-    // navbar
-    function dropdown() {
-        var x = document.getElementById("items");
-        var b = document.getElementById("burger");
+        // navbar
+        function dropdown() {
+            var x = document.getElementById("items");
+            var b = document.getElementById("burger");
 
-        if (x.style.height === "120px") {
-            console.log("Close")
+            if (x.style.height === "120px") {
+                console.log("Close")
 
-            x.style.height = "0px"
-            b.style.background = "#4d4d4d";
-        } else {
-            console.log("Open")
+                x.style.height = "0px"
+                b.style.background = "#4d4d4d";
+            } else {
+                console.log("Open")
 
-            x.style.height = "120px"
-            b.style.background = "#5259D9";
+                x.style.height = "120px"
+                b.style.background = "#5259D9";
+            }
+
+            // var elem = document.getElementById("myLinks");
+            // var height = elem.style.height;
+            // var id = setInterval(frame, 1);
+            // function frame() {
+            //     if (height <= 120) {
+            //         height++;
+            //         console.log(height)
+            //         elem.style.height = height + 'px';
+            //     } else if (height > 120){
+            //         height--;
+            //         elem.style.height = height + 'px';
+            //     }
+            // }
+
         }
 
-        // var elem = document.getElementById("myLinks");
-        // var height = elem.style.height;
-        // var id = setInterval(frame, 1);
-        // function frame() {
-        //     if (height <= 120) {
-        //         height++;
-        //         console.log(height)
-        //         elem.style.height = height + 'px';
-        //     } else if (height > 120){
-        //         height--;
-        //         elem.style.height = height + 'px';
-        //     }
-        // }
-
-    }
 
 
 
-
-</script>
+    </script>
 
 </body>
