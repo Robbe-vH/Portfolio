@@ -63,8 +63,9 @@ h5 {
   position: relative;
   left: 0vw;
   width: 25%;
-  height: 100%;
   min-height: 800px;
+  margin-bottom: 0;
+
 }
 
 .zijbalk .hr {
