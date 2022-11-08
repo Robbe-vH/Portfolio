@@ -1,4 +1,4 @@
-import { Component, Input } from "@angular/core";
+import { Component, ElementRef, ViewChild } from "@angular/core";
 
 @Component({
     selector: 'portfolio-ResumePagina',
@@ -6,5 +6,4 @@ import { Component, Input } from "@angular/core";
     styleUrls: ['./resume.component.css']
 })
 export class ResumePagina {
-
 }

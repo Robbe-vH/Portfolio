@@ -1,2 +1,9 @@
-<div class="skillbalk" (mouseenter)="move()">
-    <div id="skillbar1" class="skillload" [style.width.%]="divWidth" *ngIf="divWidth>1"> {{ divWidth }}%</div>
+<div #skillbar class="skillbalk" (mouseover)="move()">
+    <div  class="skillload" [style.width.%]="divWidth" *ngIf="divWidth>1"> {{ divWidth}}</div>
+    <!-- <h1>Is div shown? {{isTestDivScrolledIntoView ? 'Yes!' : 'No :-('}}</h1> -->
+</div>
+
+<!-- <div class="skillbalk" (scroll)="move()">
+    <div #skillbar class="skillload" [style.width.%]="divWidth" *ngIf="divWidth>1"> {{ divWidth }}%</div>
+    <h1>Is div shown? {{isTestDivScrolledIntoView ? 'Yes!' : 'No :-('}}</h1>
+</div> -->
