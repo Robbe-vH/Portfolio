@@ -39,7 +39,7 @@
   </nav>
 
   <div class="mobielnav">
-    <a class="logobar">Robbe vH</a>
+    <a class="logobar" (click)="ClickResume()" >Robbe vH</a>
     <div id="items" *ngIf="mobielNavIsClicked">
       <a (click)="ClickProjects()">Projects</a>
       <a (click)="ClickContact()">Contact Form</a>
