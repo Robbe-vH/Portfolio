@@ -81,6 +81,30 @@ nav li a {
   color: #F0F1F2;
 }
 
+footer {
+  height: 100px;
+  background-color: #5259D9;
+}
+
+footer a {
+  text-decoration: none;
+  color: #F0F1F2;
+}
+
+.footer-items {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+footer h2 {
+  text-align: center;
+  margin: 20px;
+  width: 15%;
+}
+
 @media only screen and (max-width: 600px) {
   nav {
     display: none;
