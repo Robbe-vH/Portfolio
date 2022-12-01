@@ -1,0 +1,67 @@
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+
+import { Router } from '@angular/router';
+
+@Component({
+    selector: 'projects-portfolio',
+    templateUrl: 'projects.component.html',
+    styleUrls: ['projects.component.css'],
+    encapsulation: ViewEncapsulation.None
+
+})
+export class Projects implements OnInit {
+    constructor(
+        private router: Router
+    )
+    {
+
+    }
+
+         ngOnInit() {
+
+            var buildUrl = "assets/platformer/Build";
+            var config = {
+              dataUrl: buildUrl + "/Build_Prod.data",
+              frameworkUrl: buildUrl + "/Build_Prod.framework.js",
+              codeUrl: buildUrl + "/Build_Prod.wasm",
+              streamingAssetsUrl: "StreamingAssets",
+              companyName: "RobbevH",
+              productName: "Portfolio Platformer",
+              productVersion: "0.1",
+              devicePixelRatio: 0
+            };
+        
+            let container = document.querySelector("#unity-container") || new Element();
+            var canvas : HTMLElement = document.querySelector("#unity-canvas") || new HTMLElement();
+            var loadingBar : HTMLElement = document.querySelector("#unity-loading-bar") || new HTMLElement();
+            var progressBarFull : HTMLElement = document.querySelector("#unity-progress-bar-full") || new HTMLElement();
+            var fullscreenButton : HTMLElement = document.querySelector("#unity-fullscreen-button") || new HTMLElement();
+            var mobileWarning : HTMLElement = document.querySelector("#unity-warning") || new HTMLElement();
+        
+            if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+              container.className = "unity-mobile";
+              config.devicePixelRatio = 1;
+              mobileWarning.style.display = "block";
+              setTimeout(() => {
+                mobileWarning.style.display = "none";
+              }, 5000);
+            } else {
+              canvas.style.width = "920px";
+              canvas.style.height = "600px";
+            }
+            loadingBar.style.display = "block";
+        
+            createUnityInstance(canvas, config, (progress: any) => {
+              progressBarFull.style.width = 100 * progress + "%";
+            }).then((unityInstance: any) => {
+              loadingBar.style.display = "none";
+              fullscreenButton.onclick = () => {
+                unityInstance.SetFullscreen(1);
+              };
+            }).catch((message: any) => {
+              alert(message);
+            });
+        
+          }
+}

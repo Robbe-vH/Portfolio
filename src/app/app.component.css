@@ -99,9 +99,10 @@ footer a {
   align-items: flex-end;
 }
 
-footer h2 {
+footer h3 {
   text-align: center;
-  margin: 20px;
+  font-size: medium;
+  margin: 35px;
   width: 15%;
 }
 

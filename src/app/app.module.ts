@@ -5,6 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { ContactForm } from './contact/contact.component';
+import { Projects } from './projects/projects.component';
 import { ResumePagina } from './resume/resume.component';
 import { SkillBalkje } from './resume/skillbalkjes/skillbalkje.component';
 import { ResumeTabel } from './resume/tabel/tabel.component';
@@ -15,6 +16,7 @@ import { ContactService } from './services.service';
     AppComponent,
     ResumePagina,
     SkillBalkje,
+    Projects,
     ContactForm,
     ResumeTabel
   ],

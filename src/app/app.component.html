@@ -30,9 +30,6 @@
         <h3 (click)="ClickProjects()">Projects</h3>
       </li>
       <li id="baritem">
-        <h3><a href="https://dino.robbevanhoppe.be/">Dino</a></h3>
-      </li>
-      <li id="baritem">
         <h3 (click)="ClickContact()">Contact</h3>
       </li>
     </ul>
@@ -52,14 +49,16 @@
   
   <div class="content">
     <portfolio-ResumePagina *ngIf="resumeIsClicked"></portfolio-ResumePagina>
+    <projects-portfolio *ngIf="projectsIsClicked"></projects-portfolio>
     <portfolio-ContactPagina *ngIf="contactIsClicked"></portfolio-ContactPagina>
+    
   </div>
 
   <footer>
     <div class="footer-items">
-      <h2>Contrast View</h2>
-      <h2><a href="#">Return to Top</a></h2>
-      <h2>Contact</h2>
+      <h3>Contrast View</h3>
+      <h3><a href="#">Return to Top</a></h3>
+      <h3 (click)="ClickContact()">Contact</h3>
     </div>
   </footer>
 </body>
