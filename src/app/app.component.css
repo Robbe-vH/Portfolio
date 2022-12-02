@@ -5,11 +5,6 @@ body {
   background-color: #F0F1F2;
   font-size: 14px;
 }
-.content {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
 nav {
   color: #F0F1F2;
   box-shadow: 0px 0px 6px #2b2b2b;
@@ -35,7 +30,6 @@ nav li {
 }
 
 nav h3 {
-  width: 95px;
   font-family: 'Roboto', sans-serif;
 }
 

@@ -1,3 +1,65 @@
-@media screen and (max-width: 950px) {
-    #unity-container { display: none; }
+h1 {
+    color: #2b2b2b;
+}
+
+li {
+    color: #2b2b2b;
+}
+
+.portfolio-pagina {
+    margin-left: 20%;
+    width: 80%;
+
+}
+
+.content {
+    margin: 0px;
+}
+
+.opdrachten {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.linkse-balk {
+    background-color: #5259D9;
+    position: sticky;
+    height: 100vh;
+    width: 20%;
+    top: 0;
+    left: 0;
+    float: left;
+}
+
+.linkse-balk ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 50px 0px;
+}
+
+.linkse-balk li {
+    width: 100%;
+    transition: all 0.7s;
+
+}
+.linkse-balk h2 {
+    padding: 25px;
+    margin: 0;
+}
+
+.linkse-balk li:hover {
+    background-color: #2f3492;
+}
+
+
+.linkse-balk a {
+    color: #F0F1F2;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1150px) {
+    #unity-container, .linkse-balk {
+        display: none;
+    }
 }
