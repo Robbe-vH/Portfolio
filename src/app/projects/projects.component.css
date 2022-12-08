@@ -2,8 +2,8 @@
     margin: 0px;
 }
 
-h1 {
-    color: #2b2b2b;
+h1, h2 {
+    color: #F0F1F2;
 }
 
 li {
@@ -41,7 +41,7 @@ li {
 }
 
 .linkse-balk h2 {
-    color: #F0F1F2;
+    
     padding: 25px;
     margin: 0;
 }
@@ -55,24 +55,63 @@ li {
 }
 
 
-.opdrachten {
-    width: 80%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+
+#opdrachten h1 {
+    background-color: #5259D9;
+    clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 75% 100%, 0% 100%);
+    border-radius: 5px;
+    font-weight: 500;
+    padding: 2%;
+    margin: 5% 0%;
 }
 
-#logboek {
+#opdrachten, #logboek, #competenties, #ontwikkeling {
     padding: 5%;
     display: flex;
     flex-direction: column;
+    align-content: center;
+}
+
+#logboek h1 {
+    background-color: #5259D9;
+    clip-path: polygon(10% 100%, 75% 100%, 100% 100%, 100% 0%, 0% 0%);
+    border-radius: 5px;
+    text-align: end;
+    font-weight: 500;
+    padding: 2%;
+    margin-bottom: 10%;
 }
 
 #logboek img {
     width: 70%;
+    align-self: center;
+    box-shadow: 0px 0px 5px #2b2b2b;
+    transition: all 0.3s;
 }
 
+#logboek img:hover {
+    width: 80%;
+}
+
+#competenties h1 {
+    background-color: #5259D9;
+    clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 75% 100%, 0% 100%);
+    border-radius: 5px;
+    font-weight: 500;
+    padding: 2%;
+    margin-top: 5%;
+}
+
+#ontwikkeling h1 {
+    background-color: #5259D9;
+    clip-path: polygon(10% 100%, 75% 100%, 100% 100%, 100% 0%, 0% 0%);
+    border-radius: 5px;
+    text-align: end;
+    font-weight: 500;
+    padding: 2%;
+    margin-bottom: 10%;
+}
 
 
 @media screen and (max-width: 1150px) {
