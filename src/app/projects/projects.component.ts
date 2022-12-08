@@ -46,8 +46,8 @@ export class Projects implements OnInit {
         mobileWarning.style.display = "none";
       }, 5000);
     } else {
-      canvas.style.width = "920px";
-      canvas.style.height = "600px";
+      canvas.style.width = "80%";
+      canvas.style.height = "60%";
     }
     loadingBar.style.display = "block";
 

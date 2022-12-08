@@ -8,7 +8,10 @@ li {
 
 .portfolio-pagina {
     margin-left: 20%;
+    margin-right: 0%;
     width: 80%;
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -17,6 +20,8 @@ li {
 }
 
 .opdrachten {
+    width: 80%;
+    margin:auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,8 +63,14 @@ li {
     text-decoration: none;
 }
 
+
 @media screen and (max-width: 1150px) {
     #unity-container, .linkse-balk {
         display: none;
     }
 }
+/* @media screen and(min-width: 1920px) {
+    #unity-loading-bar, #unity-logo {
+        display: none;
+    }
+ }  */
