@@ -1,3 +1,7 @@
+.content {
+    margin: 0px;
+}
+
 h1 {
     color: #2b2b2b;
 }
@@ -12,19 +16,6 @@ li {
     width: 80%;
     display: flex;
     flex-direction: column;
-
-}
-
-.content {
-    margin: 0px;
-}
-
-.opdrachten {
-    width: 80%;
-    margin:auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .linkse-balk {
@@ -48,7 +39,9 @@ li {
     transition: all 0.7s;
 
 }
+
 .linkse-balk h2 {
+    color: #F0F1F2;
     padding: 25px;
     margin: 0;
 }
@@ -57,18 +50,39 @@ li {
     background-color: #2f3492;
 }
 
-
 .linkse-balk a {
-    color: #F0F1F2;
     text-decoration: none;
 }
 
 
+.opdrachten {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logboek {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+#logboek img {
+    width: 70%;
+}
+
+
+
 @media screen and (max-width: 1150px) {
-    #unity-container, .linkse-balk {
+
+    #unity-container,
+    .linkse-balk {
         display: none;
     }
 }
+
 /* @media screen and(min-width: 1920px) {
     #unity-loading-bar, #unity-logo {
         display: none;
