@@ -5,6 +5,7 @@ body {
   background-color: #F0F1F2;
   font-size: 14px;
 }
+
 nav {
   color: #F0F1F2;
   box-shadow: 0px 0px 6px #2b2b2b;
@@ -74,6 +75,13 @@ nav li a {
   background-color: #5259D9;
   color: #F0F1F2;
 }
+
+.resume-pagina {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 
 footer {
   height: 100px;
