@@ -105,6 +105,12 @@ h4 {
   align-items: center;
 }
 
+.fotoblok a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .fotoblok h1 {
   text-shadow: none;
   color: #2b2b2b;
@@ -216,8 +222,7 @@ h4 {
   display: inline;
 }
 
-/* Resume begint vanaf hier */
-
+/* resume begint vanaf hier  */
 .resume {
   display: flex;
   flex-direction: column;
@@ -228,14 +233,20 @@ h4 {
 }
 
 .resume p {
+  line-height: 1.5;
   color: #2b2b2b;
+}
+
+.description {
+  padding: 10px 0;
+  text-align: justify;
 }
 
 .blauwebalk {
   background-color: #5259D9;
   padding: 5px 10px;
   color: #F0F1F2;
-  margin: 10px 0;
+  margin: 20px 0;
   border-radius: 10px;
 }
 
@@ -250,20 +261,23 @@ h4 {
   margin-left: 0;
 }
 
-.beschrijving,
-.werkervaring {
-  margin: 5% 0;
-}
-
-.werkervaring h1 {
-  text-align: end;
+.beschrijving {
+  margin: 5% 0 0 0;
 }
 
 .hardsk {
+  margin: 5% 0 0 0;
   display: flex;
   flex-direction: column;
 }
 
+.hardsk p {
+  text-align: justify;
+}
+
+.hardsk h3 {
+  font-weight: bold;
+}
 
 /* telefoon opmaak */
 @media only screen and (max-width: 600px) {

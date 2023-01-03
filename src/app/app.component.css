@@ -86,26 +86,18 @@ nav li a {
 footer {
   height: 100px;
   background-color: #5259D9;
+  display: flex;
+  justify-content: center;
 }
 
 footer a {
+  margin: 20px;
   text-decoration: none;
+}
+
+fa-icon.AnglesUp {
   color: #F0F1F2;
-}
-
-.footer-items {
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-
-footer h3 {
-  text-align: center;
-  font-size: medium;
-  margin: 35px;
-  width: 15%;
+  font-size: 3em;
 }
 
 @media only screen and (max-width: 600px) {

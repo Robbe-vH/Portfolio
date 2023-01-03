@@ -4,7 +4,7 @@
     <!-- Gekleurde zijblak -->
     <div class="zijbalk">
         <div class="fotoblok">
-            <img class="profielfoto" src="https://picsum.photos/300" alt="Profielfoto" />
+            <a href="https://www.linkedin.com/in/robbe-van-hoppe-18b685244/"><img class="profielfoto" src="../../assets/images/profielfoto2.jpg" alt="Profielfoto" /></a>
             <h1>Robbe van Hoppe</h1>
             <h3>Student Programmer</h3>
         </div>
@@ -65,14 +65,13 @@
         <div class="contactblok">
             <h1>Contact Me</h1>
             <ul class="contactlijst">
-                <li class="email"><a href="mailto: robbevanhoppe@outlook.com"><em class="fa fa-envelope"></em></a>
+                <li class="email"><a href="mailto: robbevanhoppe@outlook.com"><fa-icon [icon]="envelope"></fa-icon></a>
                 </li>
-                <li class="phone"><a href="tel:0032456182501"><em class="fa fa-phone"></em></a>
+                <li class="phone"><a href="tel:0032456182501"><fa-icon [icon]="phone"></fa-icon></a>
                 </li>
-                <li class="website"><a href="https://portfolio.robbevanhoppe.be/"><em class="fa fa-globe"></em></a>
+                <li class="website"><a href="https://portfolio.robbevanhoppe.be/"><fa-icon [icon]="globe"></fa-icon></a>
                 </li>
-                <li class="linkedin"><a href="https://www.linkedin.com/in/robbe-van-hoppe-18b685244/"><em
-                            class="fa fa-linkedin" style="font-size:24px"></em></a>
+                <li class="linkedin"><a href="https://www.linkedin.com/in/robbe-van-hoppe-18b685244/"><fa-icon [icon]="linkedIn"></fa-icon></a>
                 </li>
             </ul>
         </div>
@@ -88,22 +87,29 @@
             </div>
 
             <div class="hr"></div>
-            <p>
-                I would like to describe myself as a person who is always eager to learn and develop his skills.
-                During my free time, I spend a lot of time on Pluralsight learning new skills to add to my set. As a
-                kid, I used to love experimenting with electronics, disassembeling old amplifiers, RC cars and
-                planes and making them into new Frankenstein devices. When I got my first job, most of my money was
-                spend on hardware for building a PC and that's where my IT journey started. I got hands on
-                experience with making a hackingtosh, swapping every component, installing Linux, crashing the
-                system a couple of times and fixing it. At the time it felt like having a new world opening, the
-                possibilities where endless. Now those years pay off in terms of the experience on system
-                administration. There is still much to learn in the system domain, but of course my main interest is
-                programming.
-                I started my journey in 5th grade back in high school, the usual introduction to web development,
-                Java, OOP in Visual Basic, etc. After completing two years of high school, I dropped out for a non
-                IT-related job which I thought would be giving me enough sattisfaction, but after a couple of years,
-                I noticed I missed programming too much and I enrolled in a undergraduate degree in Programming at
-                PXL.
+            <p class="description">
+                I would like to describe myself as a person who is eager to learn and develop his skills.
+                    During my free time, I spend a lot of time on Pluralsight learning new skills to add to my set.
+                    As a
+                    kid, I used to love experimenting with electronics, disassembeling old amplifiers, RC cars and
+                    planes and making them into new Frankenstein devices. When I got my first job, most of my money
+                    was
+                    spend on hardware for building a PC and that's where my IT journey started. I got hands on
+                    experience with making a hackingtosh, swapping every component, installing Linux, crashing the
+                    system a couple of times and fixing it. At the time it felt like having a new world opening, the
+                    possibilities where endless. Now those years pay off in terms of the experience on system
+                    administration. There is still much to learn in the system domain, but of course my main
+                    interest is
+                    programming.
+                    I started my journey in 5th grade back in high school, the usual introduction to web
+                    development,
+                    Java, OOP in Visual Basic, etc. After completing two years of high school, I dropped out for a
+                    non
+                    IT-related job which I thought would be giving me enough sattisfaction, but after a couple of
+                    years,
+                    I felt like I missed programming too much and I enrolled in a undergraduate degree in Programming
+                    at
+                    PXL.
             </p>
         </div>
 
@@ -115,6 +121,7 @@
 
             <div class="hr"></div>
             <resume-tabel></resume-tabel>
+            
         </div>
 
         <div class="hardskills">
@@ -161,69 +168,18 @@
                 </p>
             </div>
 
+            <div class="hardsk">
+                <h3>Linux Arch & Ubuntu</h3>
+                <resume-skillbalkje [maxWidth]=70></resume-skillbalkje>
 
+                <p>
+                    I have been running a Debain/Proxmox based server for some time at home. As my main driver on my laptop 
+                    I use Arch Manjaro. My experience with Linux runs back to high school when I first installed Ubuntu.
+                    The possibilities have always interested me a lot. 
+                </p>
+            </div>
 
         </div>
 
     </div>
 </div>
-
-<script>
-    //hard skill balkjes
-    function move1() {
-        var elem = document.getElementById("skillbar1");
-        var width = elem.style.width;
-        var id = setInterval(frame, 10);
-        function frame() {
-            if (width < 50) {
-                width++;
-                elem.style.width = width + '%';
-                elem.innerHTML = width + " %";
-            }
-        }
-    }
-
-    function move2() {
-        var elem = document.getElementById("skillbar2");
-        var width = elem.style.width;
-        var id = setInterval(frame, 10);
-        function frame() {
-            if (width < 25) {
-                width++;
-                elem.style.width = width + '%';
-                elem.innerHTML = width + " %";
-            }
-        }
-    }
-
-    function move3() {
-        var elem = document.getElementById("skillbar3");
-        var width = elem.style.width;
-        var id = setInterval(frame, 10);
-        function frame() {
-            if (width < 40) {
-                width++;
-                elem.style.width = width + '%';
-                elem.innerHTML = width + " %";
-            }
-        }
-    }
-
-    // navbar
-    function dropdown() {
-        var x = document.getElementById("items");
-        var b = document.getElementById("burger");
-
-        if (x.style.height === "120px") {
-            console.log("Close")
-
-            x.style.height = "0px"
-            b.style.background = "#4d4d4d";
-        } else {
-            console.log("Open")
-
-            x.style.height = "120px"
-            b.style.background = "#5259D9";
-        }
-    }
-</script>
