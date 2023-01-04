@@ -1,9 +1,25 @@
 <div class="linkse-balk">
   <ul>
-    <a href="#opdrachten"><li><h2>Opdrachten</h2></li></a>
-    <a href="#logboek"><li><h2>Logboek</h2></li></a>
-    <a href="#competenties"><li><h2>Competenties</h2></li></a>
-    <a href="#ontwikkeling"><li><h2>Ontwikkeling</h2></li></a>
+    <a href="#opdrachten">
+      <li>
+        <h2>Opdrachten</h2>
+      </li>
+    </a>
+    <a href="#logboek">
+      <li>
+        <h2>Logboek</h2>
+      </li>
+    </a>
+    <a href="#competenties">
+      <li>
+        <h2>Competenties</h2>
+      </li>
+    </a>
+    <a href="#ontwikkeling">
+      <li>
+        <h2>Ontwikkeling</h2>
+      </li>
+    </a>
   </ul>
 </div>
 <div class="portfolio-pagina">
@@ -17,7 +33,7 @@
       <li>Reflectie learning path</li>
     </ul> -->
     <div id="unity-container" class="unity-desktop platformer">
-      <canvas id="unity-canvas" ></canvas>
+      <canvas id="unity-canvas"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -31,93 +47,167 @@
       </div>
     </div>
   </div>
-  
+
   <div id="logboek">
     <h1>Logboek</h1>
     <img src="../../assets/images/programmeren_jaarplanning-1.png" alt="Jaarplanning">
   </div>
-  
+
   <div id="competenties">
     <h1>Competenties</h1>
 
     <h2>Ontwerper</h2>
+    <div class="competentiesUitleg">
 
-    <h4><em>Waar sta je momenteel?</em></h4>
-    <p> 
-      Als ontwerper heb ik nog weinig ervaring, deze website is een van de grotere projecten die ik zelf heb kunnen ontwerpen.
-      Het zelf kiezen van een ontwerp vind ik wel leuk, maar creativiteit is niet mijn sterkste punt.
-    </p>
+      <h4><fa-icon [icon]="location"></fa-icon><em>Waar sta je momenteel?</em></h4>
+      <p>
+        Als ontwerper heb ik nog weinig ervaring, deze website is een van de grotere projecten die ik zelf heb kunnen
+        ontwerpen.
+        Het zelf kiezen van een ontwerp vind ik wel leuk, maar creativiteit is niet mijn sterkste punt.
+      </p>
 
-    <h4><em>Wat lukt je al goed?</em></h4>
-    <p>
-      Het kiezen van kleuren en opdelen van pagina's met samenhangende opmaak lukt vrij goed.
-    </p>
+      <h4><fa-icon [icon]="check"></fa-icon><em>Wat lukt je al goed?</em></h4>
+      <p>
+        Het kiezen van kleuren en opdelen van pagina's met samenhangende opmaak lukt vrij goed.
+      </p>
 
-    <h4><em>Wat lukt je nog niet?</em></h4>
-    <p>
-      Originele ontwerpen maken die uit de massa springen is niet mijn sterkste kant, het ontwerp
-       van mijn website is al door duizenden mensen voor mij gedaan.
-    </p>
+      <h4><fa-icon [icon]="xMark"></fa-icon><em>Wat lukt je nog niet?</em></h4>
+      <p>
+        Originele ontwerpen maken die uit de massa springen is niet mijn sterkste kant, het ontwerp
+        van mijn website is al door duizenden mensen voor mij gedaan.
+      </p>
+
+      <h4><fa-icon [icon]="list"></fa-icon><em> Voorbeelden</em></h4>
+      <ul>
+        <li>Tijdens het Webproject van WPL 1 hebben we ons eigen ontwerp kunnen kiezen en uitwerken.</li>
+        <li>Tijdens het C# project is er ook gevraagd om een eigen ontwerp te maken.</li>
+        <li>Later zullen we denk ik vaker moeten luisteren naar een UX/UI designer die ons de foto's en de rest van het
+          ontwerp uittekent.</li>
+      </ul>
+    </div>
 
     <h2>Programmeur</h2>
-    <h4><em>Waar sta je momenteel?</em></h4>
-    <p>
-      Als programmeur heb ik mijn best gedaan de eerste maanden om veel kennis binnen en buiten school op te doen.
-      Na mijn uren op school heb ik me verdiept in andere talen en projecten.<br /> Dit heeft me veel geholpen om de leerstof in de vingers 
-      te krijgen.
-    </p>
+    <div class="competentiesUitleg">
+      <h4><fa-icon [icon]="location"></fa-icon><em>Waar sta je momenteel?</em></h4>
+      <p>
+        Als programmeur heb ik mijn best gedaan de eerste maanden om veel kennis binnen en buiten school op te doen.
+        Na mijn uren op school heb ik me verdiept in andere talen en projecten. Dit heeft me veel geholpen om de
+        leerstof in de vingers te krijgen. Ook heb ik veel moeite gestoken in het <a href="#opdrachten">opdrachten</a>
+        gedeelte van de website. Hier is een C# spel gemaakt in Unity in de website verwerkt.
+      </p>
 
-    <h4><em>Wat lukt je al goed?</em></h4>
-    <p></p>
+      <h4><fa-icon [icon]="check"></fa-icon><em>Wat lukt je al goed?</em></h4>
+      <p>
+        Leerstof van de lessen toepassen in de projecten van WPL, eigenhandig nieuwe dingen opzoeken en toepassen.
+      </p>
 
-    <h4><em>Wat lukt je nog niet?</em></h4>
-    <p></p>
+      <h4><fa-icon [icon]="xMark"></fa-icon><em>Wat lukt je nog niet?</em></h4>
+      <p>
+        Snel en efficient door de documentatie van talen zoeken en de voorbeelden gemakkelijk omzetten naar mijn eigen
+        programma.
+      </p>
 
-    <h4><em>Wat lukt je nog niet?</em></h4>
-    <p></p>
+      <h4><fa-icon [icon]="list"></fa-icon><em> Voorbeelden</em></h4>
+      <ul>
+        <li>Bij de C# opdracht werden er uitbreidingen gevraagd die we nog niet in de les hadden gezien, dus daardoor
+          zijn we eigenhandig moeten gaan opzoeken.</li>
+        <li>Bij onze portfolio opdracht zjin we vrij geweest om skills van buiten de les toe te passen, daarom heb ik de
+          beginselen van Angular geleerd en deze website ermee gemaakt.</li>
+        <li>Later zullen er dagelijks dingen komen die we nog niet hebben gezien, daarom is het nu belangrijk om
+          effecient zelf nieuwe documentatie te kunnen lezen en begrijpen.</li>
+      </ul>
+    </div>
+
 
     <h2>Tester</h2>
-    <h4><em>Waar sta je momenteel?</em></h4>
-    <p></p>
+    <div class="competentiesUitleg">
+      <h4><fa-icon [icon]="location"></fa-icon><em>Waar sta je momenteel?</em></h4>
+      <p>
+        Om code te testen heb ik SonarQube opgesteld in een docker-container op mijn server thuis. Dit was leuk om mee
+        te experimenteren en om feedback te krijgen op mijn code. Zelf heb ik ook vaak mijn C# BlackJack spel moeten
+        testen om te kijken of alles werkt zoals het hoort.
+      </p>
 
-    <h4><em>Wat lukt je al goed?</em></h4>
-    <p></p>
+      <h4><fa-icon [icon]="check"></fa-icon><em>Wat lukt je al goed?</em></h4>
+      <p>
+        Basis code overlopen om fouten op te sporen.
+      </p>
 
-    <h4><em>Wat lukt je nog niet?</em></h4>
-    <p></p>
+      <h4><fa-icon [icon]="xMark"></fa-icon><em>Wat lukt je nog niet?</em></h4>
+      <p>
+        Effecient op zoek gaan naar waar de fout zich precies voor doet. Vooral bij C# vind ik dit een moeilijkere
+        opgave dan bij Javascript/Typescript.
+      </p>
 
-    <h4><em>Wat lukt je nog niet?</em></h4>
-    <p></p>
+      <h4><fa-icon [icon]="list"></fa-icon><em> Voorbeelden</em></h4>
+      <ul>
+        <li>Het debuggen van het BlackJack spel.</li>
+        <li>Het werkend krijgen van het Interactief Portfolio spel in een Angular website had redelijk veel debugging
+          nodig.</li>
+        <li>Later zullen we ook constant onze eigen code moeten nalezen en debuggen, tenzij dat er een gespecialiseerde
+          tester aanwezig is, of als er een server opstaat met scripts om dit te automatiseren.</li>
+      </ul>
+    </div>
 
     <h2>Communicator/Teamspeler</h2>
-    <h4><em>Waar sta je momenteel?</em></h4>
-    <p></p>
+    <div class="competentiesUitleg">
+      <h4><fa-icon [icon]="location"></fa-icon><em>Waar sta je momenteel?</em></h4>
+      <p>
+        We hebben tot nu toe nog geen grote groepswerken gehad. Maar van mezelf weet ik dat ik wel graag in groep werk,
+        als de rest ook goed mee werkt aan het project.
+      </p>
 
-    <h4><em>Wat lukt je al goed?</em></h4>
-    <p></p>
+      <h4><fa-icon [icon]="check"></fa-icon><em>Wat lukt je al goed?</em></h4>
+      <p>
+        Werken met Git begint goed te klikken. Dit lijkt me een van de belangrijkere tools in het werken als een team.
+      </p>
 
-    <h4><em>Wat lukt je nog niet?</em></h4>
-    <p></p>
+      <h4><fa-icon [icon]="xMark"></fa-icon><em>Wat lukt je nog niet?</em></h4>
+      <p>
+        Aangezien we nog niet echt een groepswerk hebben moeten doen weet ik niet zeker wat me niet goed lukt, maar ik
+        kan me inbeelden dat ik niet goed ben in mensen te motiveren die niks doen in een groepswerk.
+      </p>
 
-    <h4><em>Wat lukt je nog niet?</em></h4>
-    <p></p>
+      <h4><fa-icon [icon]="list"></fa-icon><em> Voorbeelden</em></h4>
+      <ul>
+        <li>Later zullen we vaak in groep moeten werken, agile en scrum werken zal een belangrijk onderdeel zijn.</li>
+        <li>Het leren inschatten van user stories op basis van hun intesiteit zal ook wat oefening vergen.</li>
+        <li>Later zal het ook een uitdaging zijn om te werken met een team wat voor de helft misschien van thuis uit
+          werkt.</li>
+      </ul>
+    </div>
 
     <h2>Levenslang lerende IT-Professional</h2>
-    <h4><em>Waar sta je momenteel?</em></h4>
-    <p></p>
+    <div class="competentiesUitleg">
+      <h4><fa-icon [icon]="location"></fa-icon><em>Waar sta je momenteel?</em></h4>
+      <p>
+        Ik doe buiten mijn lessen regelmatig een sessie op PluralSight om nieuwe skills te leren. Het interesseert me
+        wel om andere frameworks te leren kennen en om te kijken welke software paketten er bestaan. Ook lijkt het me
+        nuttig om dingen bij te leren over systemen en netwerken.
+      </p>
 
-    <h4><em>Wat lukt je al goed?</em></h4>
-    <p></p>
+      <h4><fa-icon [icon]="check"></fa-icon><em>Wat lukt je al goed?</em></h4>
+      <p>
+        Nieuwe dingen bijleren via het internet, vragen stellen op bv. StackOverflow en Reddit.
+      </p>
 
-    <h4><em>Wat lukt je nog niet?</em></h4>
-    <p></p>
+      <h4><fa-icon [icon]="xMark"></fa-icon><em>Wat lukt je nog niet?</em></h4>
+      <p>
+        Efficient door documentatie bladeren en voorbeelden toepassen.
+      </p>
 
-    <h4><em>Wat lukt je nog niet?</em></h4>
-    <p></p>
+      <h4><fa-icon [icon]="list"></fa-icon><em> Voorbeelden</em></h4>
+      <ul>
+        <li>Als IT-er zal je altijd moeten blijven bijleren om mee te zijn met de nieuwe technologie.</li>
+        <li>Later zal er ok van je verwacht worden om een framework bij te leren op een paar dagen om een opdracht te
+          kunnen maken, daarom is het nuttig om alvast eentje te snappen.</li>
+        <li>Het lijkt me normaal om interesse te hebben in andere vakgebieden van IT zodat je de volledige werking snapt
+          en niet alleen het programmeer gedeelte</li>
+      </ul>
+    </div>
   </div>
-  
+
   <div id="ontwikkeling">
     <h1> Ontwikkelingsgesprekken</h1>
   </div>
 </div>
-

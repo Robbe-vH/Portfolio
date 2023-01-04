@@ -1,6 +1,8 @@
-import { AfterContentInit, AfterViewInit, Component, OnChanges, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 import { Router } from '@angular/router';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faCheck, faCross, faList, faLocationArrow, faThumbsDown, faThumbsUp, faXmark } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'projects-portfolio',
@@ -10,6 +12,10 @@ import { Router } from '@angular/router';
 
 })
 export class Projects implements OnInit {
+  list = faList;
+  location = faLocationArrow;
+  check = faCheck;
+  xMark = faXmark;
 
   constructor(
     private router: Router

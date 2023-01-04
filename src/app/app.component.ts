@@ -12,8 +12,8 @@ export class AppComponent {
   faAnglesUp = faAnglesUp;
 
   //homepage hier als enige op true zetten
-  resumeIsClicked = true;
-  projectsIsClicked = false;
+  resumeIsClicked = false;
+  projectsIsClicked = true;
   mobielNavIsClicked = false;
   contactIsClicked = false;
 

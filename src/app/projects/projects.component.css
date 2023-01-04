@@ -103,14 +103,29 @@ li {
     margin-top: 5%;
 }
 
-#competenties h2, h4 {
+#competenties h4 {
     color: #2b2b2b;
     margin: 10px 0px;
 }
 
-#competenties p {
+#competenties h2 {
+    color: black;
+    margin: 20px 10px;
+}
+
+#competenties p, a {
     color: #2b2b2b;
     line-height: 2em;
+    text-align: justify;
+}
+
+.competentiesUitleg {
+    margin: 10px;
+}
+
+fa-icon {
+    color: #5259D9;
+    margin-right: 10px;
 }
 
 #ontwikkeling h1 {
