@@ -4,7 +4,8 @@
     <!-- Gekleurde zijblak -->
     <div class="zijbalk">
         <div class="fotoblok">
-            <a href="https://www.linkedin.com/in/robbe-van-hoppe-18b685244/"><img class="profielfoto" src="../../assets/images/profielfoto2.jpg" alt="Profielfoto" /></a>
+            <a href="https://www.linkedin.com/in/robbe-van-hoppe-18b685244/"><img class="profielfoto"
+                    src="../../assets/images/profielfoto2.jpg" alt="Profielfoto" /></a>
             <h1>Robbe van Hoppe</h1>
             <h3>Student Programmer</h3>
         </div>
@@ -55,7 +56,7 @@
             </div>
             <div class="int">
                 <h3>Jazz</h3>
-                <h3>Beer</h3>
+                <h3>Coffee</h3>
             </div>
         </div>
 
@@ -71,7 +72,8 @@
                 </li>
                 <li class="website"><a href="https://portfolio.robbevanhoppe.be/"><fa-icon [icon]="globe"></fa-icon></a>
                 </li>
-                <li class="linkedin"><a href="https://www.linkedin.com/in/robbe-van-hoppe-18b685244/"><fa-icon [icon]="linkedIn"></fa-icon></a>
+                <li class="linkedin"><a href="https://www.linkedin.com/in/robbe-van-hoppe-18b685244/"><fa-icon
+                            [icon]="linkedIn"></fa-icon></a>
                 </li>
             </ul>
         </div>
@@ -89,27 +91,27 @@
             <div class="hr"></div>
             <p class="description">
                 I would like to describe myself as a person who is eager to learn and develop his skills.
-                    During my free time, I spend a lot of time on Pluralsight learning new skills to add to my set.
-                    As a
-                    kid, I used to love experimenting with electronics, disassembeling old amplifiers, RC cars and
-                    planes and making them into new Frankenstein devices. When I got my first job, most of my money
-                    was
-                    spend on hardware for building a PC and that's where my IT journey started. I got hands on
-                    experience with making a hackingtosh, swapping every component, installing Linux, crashing the
-                    system a couple of times and fixing it. At the time it felt like having a new world opening, the
-                    possibilities where endless. Now those years pay off in terms of the experience on system
-                    administration. There is still much to learn in the system domain, but of course my main
-                    interest is
-                    programming.
-                    I started my journey in 5th grade back in high school, the usual introduction to web
-                    development,
-                    Java, OOP in Visual Basic, etc. After completing two years of high school, I dropped out for a
-                    non
-                    IT-related job which I thought would be giving me enough sattisfaction, but after a couple of
-                    years,
-                    I felt like I missed programming too much and I enrolled in a undergraduate degree in Programming
-                    at
-                    PXL.
+                During my free time, I spend a lot of time on Pluralsight learning new skills to add to my set.
+                As a
+                kid, I used to love experimenting with electronics, disassembeling old amplifiers, RC cars and
+                planes and making them into new Frankenstein devices. When I got my first job, most of my money
+                was
+                spend on hardware for building a PC and that's where my IT journey started. I got hands on
+                experience with making a hackingtosh, swapping every component, installing Linux, crashing the
+                system a couple of times and fixing it. At the time it felt like having a new world opening, the
+                possibilities where endless. Now those years pay off in terms of the experience on system
+                administration. There is still much to learn in the system domain, but of course my main
+                interest is
+                programming.
+                I started my journey in 5th grade back in high school, the usual introduction to web
+                development,
+                Java, OOP in Visual Basic, etc. After completing two years of high school, I dropped out for a
+                non
+                IT-related job which I thought would be giving me enough sattisfaction, but after a couple of
+                years,
+                I felt like I missed programming too much and I enrolled in a undergraduate degree in Programming
+                at
+                PXL.
             </p>
         </div>
 
@@ -121,7 +123,65 @@
 
             <div class="hr"></div>
             <resume-tabel></resume-tabel>
-            
+            <div class="werkuitleg-mobile">
+                <div class="kaartje" *ngIf="kaartjes[0]">
+                    <div class="kaarthoofding">Thai Cafe</div>
+                    <p class="kaartTekst">At Thai Cafe, I started out driving around delivering TakeAway orders. After a
+                        couple of months though my employer asked me if I would be interested in helping behind the
+                        bar
+                        and serving plates to the tables. I very much enjoy helping where I can and having contact
+                        with
+                        the customers.</p>
+                </div>
+
+                <div class="kaartje" *ngIf="kaartjes[1]">
+                    <div class="kaarthoofding">Bpost</div>
+                    <p class="kaartTekst">I applied for a single-month student job in the summer, but due to a shortage
+                        of
+                        mailmen,
+                        my employer asked me if I could stay for four months. It was a pretty intense work schedule
+                        with
+                        a lot of pressure and not a lot of guidance. It took me a couple of weeks to get used to the
+                        job
+                        and find the right ways of getting all letters and packages delivered within my paid time,
+                        but
+                        once I got the hang of it, the job turned out to be pretty fun in its own way.</p>
+                </div>
+
+                <div class="kaartje" *ngIf="kaartjes[2]">
+                    <div class="kaarthoofding">Profile Pauwels</div>
+                    <p class="kaartTekst">For my years at Pauwels, I am grateful for all the learning experiences my
+                        employer
+                        and colleagues gave me. Not only did I learn to work the mechanics of bikes, but first and
+                        foremost I
+                        got hands-on experience talking to customers and honing my social skills. Due to my moving
+                        to
+                        Hasselt, I had to give up this student job, but it will always be an important part of my
+                        early
+                        work experience.</p>
+                </div>
+                <div class="kaartje 3" *ngIf="kaartjes[3]">
+                    <div class="kaarthoofding">Speelplein de Boomhut</div>
+                    <p class="kaartTekst">This was one of the more random jobs I got into. A friend of mine asked me if
+                        I
+                        would be interested in helping him out with a summer camp for children with disabilities. At
+                        first
+                        I didn't feel comfortable with the idea because I felt like I could do more harm than good,
+                        but
+                        he assured me I would be okay. After getting to know the children and their little quirks, I
+                        had
+                        an awesome time caring for and playing with them.</p>
+                </div>
+                <div class="kaartje 4" *ngIf="kaartjes[4]">
+                    <div class="kaarthoofding">Karting Lommel</div>
+                    <p class="kaartTekst">Coming from my interest in mechanics, I got a position as a kart mechanic at
+                        my
+                        local
+                        karting circuit during summer vacation. Even though it was pretty fun working there, I chose
+                        my job at the bicycle shop when school started again.</p>
+                </div>
+            </div>
+
         </div>
 
         <div class="hardskills">
@@ -173,9 +233,10 @@
                 <resume-skillbalkje [maxWidth]=70></resume-skillbalkje>
 
                 <p>
-                    I have been running a Debain/Proxmox based server for some time at home. As my main driver on my laptop 
+                    I have been running a Debain/Proxmox based server for some time at home. As my main driver on my
+                    laptop
                     I use Arch Manjaro. My experience with Linux runs back to high school when I first installed Ubuntu.
-                    The possibilities have always interested me a lot. 
+                    The possibilities have always interested me a lot.
                 </p>
             </div>
 
