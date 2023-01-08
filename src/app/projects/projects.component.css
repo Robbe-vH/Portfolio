@@ -145,6 +145,10 @@ fa-icon {
     .linkse-balk {
         display: none;
     }
+
+    .portfolio-pagina {
+        margin: auto;
+    }
 }
 
 /* @media screen and(min-width: 1920px) {
