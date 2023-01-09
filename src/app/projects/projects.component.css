@@ -66,7 +66,7 @@ li {
     margin: 5% 0%;
 }
 
-#opdrachten, #logboek, #competenties, #ontwikkeling {
+#opdrachten, #logboek, #competenties, #reflectie {
     padding: 5%;
     display: flex;
     flex-direction: column;
@@ -128,7 +128,7 @@ fa-icon {
     margin-right: 10px;
 }
 
-#ontwikkeling h1 {
+#reflectie h1 {
     background-color: #5259D9;
     clip-path: polygon(10% 100%, 75% 100%, 100% 100%, 100% 0%, 0% 0%);
     border-radius: 5px;
@@ -150,9 +150,3 @@ fa-icon {
         margin: auto;
     }
 }
-
-/* @media screen and(min-width: 1920px) {
-    #unity-loading-bar, #unity-logo {
-        display: none;
-    }
- }  */

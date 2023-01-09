@@ -206,6 +206,7 @@ h4 {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+  flex-wrap: nowrap;
   align-items: center;
 }
 
