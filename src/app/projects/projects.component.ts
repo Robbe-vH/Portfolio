@@ -3,7 +3,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faWindows } from '@fortawesome/free-brands-svg-icons';
-import { faCheck, faList, faLocationArrow, faNewspaper, faXmark} from '@fortawesome/free-solid-svg-icons';
+import { faCalendar, faCheck, faList, faLocationArrow, faNewspaper, faUser, faXmark} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'projects-portfolio',
@@ -19,6 +19,8 @@ export class Projects implements OnInit {
   xMark = faXmark;
   newsPaper = faNewspaper;
   windows = faWindows;
+  calendar = faCalendar;
+  user = faUser;
 
   constructor(
     private router: Router
