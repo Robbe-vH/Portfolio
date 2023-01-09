@@ -87,7 +87,8 @@ footer {
   height: 100px;
   background-color: #5259D9;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
 }
 
 footer a {

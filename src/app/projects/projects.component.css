@@ -66,6 +66,13 @@ li {
     margin: 5% 0%;
 }
 
+.opdrachten-mobile {
+    display: none;
+    color: #2b2b2b;
+    line-height: 2em;
+    text-align: justify;
+}
+
 #opdrachten, #logboek, #competenties, #reflectie {
     padding: 5%;
     display: flex;
@@ -138,6 +145,12 @@ fa-icon {
     margin-bottom: 10%;
 }
 
+#reflectie p{
+    color: #2b2b2b;
+    line-height: 2em;
+    text-align: justify;
+}
+
 
 @media screen and (max-width: 1150px) {
 
@@ -148,5 +161,9 @@ fa-icon {
 
     .portfolio-pagina {
         margin: auto;
+    }
+
+    .opdrachten-mobile {
+        display: block;
     }
 }
