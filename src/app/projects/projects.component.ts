@@ -2,9 +2,8 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 
-import { library } from '@fortawesome/fontawesome-svg-core';
 import { faWindows } from '@fortawesome/free-brands-svg-icons';
-import { faCalendar, faCheck, faList, faLocationArrow, faNewspaper, faUser, faXmark} from '@fortawesome/free-solid-svg-icons';
+import { faCalendar, faCheck, faList, faLocationArrow, faNewspaper, faUser, faXmark, faPen, faFilePowerpoint } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'projects-portfolio',
@@ -22,6 +21,8 @@ export class Projects implements OnInit {
   windows = faWindows;
   calendar = faCalendar;
   user = faUser;
+  pen = faPen;
+  ppt = faFilePowerpoint;
 
   constructor(
     private router: Router,
@@ -30,18 +31,27 @@ export class Projects implements OnInit {
 
   }
 
-  downloadZip(): void {
-  const url = '../../assets/presentatie_eindevaluatie_team04.zip';
-  this.http.get(url, { responseType: 'blob' })
-    .subscribe((data: Blob) => {
-      const downloadUrl = URL.createObjectURL(data);
-      const link = document.createElement('a');
-      link.href = downloadUrl;
-      link.download = 'presentatie_eindevaluatie_team04.zip';
-      link.click();
-    });
+  downloadZip(type: string): void {
+    const url: string = '';
+    if (type === 'logboek') {
+      const url = '../../assets/logboek_eindevaluatie`_team04.zip';
+    }
+    else if (type === 'presentatie') {
+      const url = '../../assets/presentatie_eindevaluatie_team04.zip';
+    }
+    this.http.get(url, { responseType: 'blob' })
+      .subscribe((data: Blob) => {
+        const downloadUrl = URL.createObjectURL(data);
+        const link = document.createElement('a');
+        link.href = downloadUrl;
+        if (type === 'logboek') {
+          link.download = 'logboek_eindevaluatie_team04.zip';
+        } else if (type === 'presentatie') {
+          link.download = 'presentatie_eindevaluatie_team04.zip';
+        }
+        link.click();
+      });
   }
-
   ngOnInit(): void {
 
     var buildUrl = "assets/platformer/Build";
