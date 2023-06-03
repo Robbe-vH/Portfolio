@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-
+import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
+
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faWindows } from '@fortawesome/free-brands-svg-icons';
 import { faCalendar, faCheck, faList, faLocationArrow, faNewspaper, faUser, faXmark} from '@fortawesome/free-solid-svg-icons';
@@ -23,9 +24,22 @@ export class Projects implements OnInit {
   user = faUser;
 
   constructor(
-    private router: Router
+    private router: Router,
+    private http: HttpClient
   ) {
 
+  }
+
+  downloadZip(): void {
+  const url = '../../assets/presentatie_eindevaluatie_team04.zip';
+  this.http.get(url, { responseType: 'blob' })
+    .subscribe((data: Blob) => {
+      const downloadUrl = URL.createObjectURL(data);
+      const link = document.createElement('a');
+      link.href = downloadUrl;
+      link.download = 'presentatie_eindevaluatie_team04.zip';
+      link.click();
+    });
   }
 
   ngOnInit(): void {

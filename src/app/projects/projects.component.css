@@ -41,7 +41,7 @@ li {
 }
 
 .linkse-balk h2 {
-    
+
     padding: 25px;
     margin: 0;
 }
@@ -101,6 +101,30 @@ li {
     width: 80%;
 }
 
+#presentatie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#presentatie h2 {
+  margin: 5% 0;
+  color: #2b2b2b;
+}
+
+#presentatie-button {
+  padding: 1%;
+  border-radius: 5px;
+  transition: all 0.1s;
+}
+
+#presentatie-button:hover {
+  background-color: #5259D9;
+  transition: all 0.3s;
+  color: #ffffff;
+  box-shadow: 2px 2px 0px #2b2b2b;
+}
+
 #competenties h1 {
     background-color: #5259D9;
     clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 75% 100%, 0% 100%);
@@ -143,6 +167,10 @@ fa-icon {
     font-weight: 500;
     padding: 2%;
     margin-bottom: 10%;
+}
+
+#reflectie h2 {
+  color: #2b2b2b;
 }
 
 #reflectie p{

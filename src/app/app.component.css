@@ -101,6 +101,12 @@ fa-icon.AnglesUp {
   font-size: 3em;
 }
 
+@media screen and (min-width: 1080px) {
+  nav {
+    font-size: 13px;
+  }
+}
+
 @media only screen and (max-width: 1150px) {
   nav {
     display: none;
