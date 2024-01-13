@@ -1,16 +1,13 @@
-#ontiwkkelingsgesprekken-container {
+#ontiwkkelingsgesprekken-container .sub-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-#download-button {
-  padding: 10px 20px;
-  font-size: 16px;
   margin-bottom: 5%;
 }
 
-#ontwikkelingsgesprekken-image {
-  max-width: 45%;
+.download-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-bottom: 5%;
 }
