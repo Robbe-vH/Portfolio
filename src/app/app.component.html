@@ -30,6 +30,9 @@
         <h3 (click)="ClickProjects()">Portfolio</h3>
       </li>
       <li id="baritem">
+        <h3 (click)="ClickWPL3()">WPL3</h3>
+      </li>
+      <li id="baritem">
         <h3 (click)="ClickContact()">Contact</h3>
       </li>
     </ul>
@@ -46,12 +49,13 @@
       <em class="fa fa-bars"></em>
     </a>
   </div>
-  
+
   <div class="content">
     <portfolio-ResumePagina *ngIf="resumeIsClicked" class="resume-pagina"></portfolio-ResumePagina>
     <projects-portfolio *ngIf="projectsIsClicked" class="projects-pagina"></projects-portfolio>
     <portfolio-ContactPagina *ngIf="contactIsClicked" class="contact-pagina"></portfolio-ContactPagina>
-    
+    <wpl3 *ngIf="wpl3IsClicked"></wpl3>
+
   </div>
 
   <footer>

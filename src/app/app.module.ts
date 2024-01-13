@@ -11,6 +11,11 @@ import { ResumePagina } from './resume/resume.component';
 import { SkillBalkje } from './resume/skillbalkjes/skillbalkje.component';
 import { ResumeTabel } from './resume/tabel/tabel.component';
 import { ContactService } from './services.service';
+import { Wpl3Component } from './WPL3/wpl3/wpl3.component';
+import { LogboekComponent } from './WPL3/wpl3/logboek/logboek.component';
+import { OntwikkelingsgesprekkenComponent } from './WPL3/wpl3/ontwikkelingsgesprekken/ontwikkelingsgesprekken.component';
+import { OpdrachtenComponent } from './WPL3/wpl3/opdrachten/opdrachten.component';
+import { ReflectieComponent } from './WPL3/wpl3/reflectie/reflectie.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +24,12 @@ import { ContactService } from './services.service';
     SkillBalkje,
     Projects,
     ContactForm,
-    ResumeTabel
+    ResumeTabel,
+    Wpl3Component,
+    LogboekComponent,
+    OntwikkelingsgesprekkenComponent,
+    OpdrachtenComponent,
+    ReflectieComponent
   ],
   imports: [
     BrowserModule,
