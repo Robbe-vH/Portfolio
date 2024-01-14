@@ -22,7 +22,7 @@ export class OntwikkelingsgesprekkenComponent {
       filename = 'WPL3-Verslag_Functioneringsgesprek_van_Hoppe_Robbe.pdf'
 
     }
-      url += filename;
+    url += filename;
 
     this.http.get(url, {responseType: 'blob'})
       .subscribe((data: Blob) => {
@@ -33,5 +33,4 @@ export class OntwikkelingsgesprekkenComponent {
         link.click();
       });
   }
-
 }
