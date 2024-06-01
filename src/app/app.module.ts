@@ -16,6 +16,8 @@ import { LogboekComponent } from './WPL3/wpl3/logboek/logboek.component';
 import { OntwikkelingsgesprekkenComponent } from './WPL3/wpl3/ontwikkelingsgesprekken/ontwikkelingsgesprekken.component';
 import { OpdrachtenComponent } from './WPL3/wpl3/opdrachten/opdrachten.component';
 import { ReflectieComponent } from './WPL3/wpl3/reflectie/reflectie.component';
+import { WPL4Component } from './WPL4/wpl4.component';
+import { WPL4ReflectieComponent } from './WPL4/reflectie/reflectie.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { ReflectieComponent } from './WPL3/wpl3/reflectie/reflectie.component';
     LogboekComponent,
     OntwikkelingsgesprekkenComponent,
     OpdrachtenComponent,
-    ReflectieComponent
+    ReflectieComponent,
+    WPL4Component,
+    WPL4ReflectieComponent
   ],
   imports: [
     BrowserModule,

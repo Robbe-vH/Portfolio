@@ -1,0 +1,26 @@
+#content {
+    color: #231F20;
+    margin: 3%;
+  }
+  
+  .header {
+    color: #F0F1F2;
+    background-color: #5259D9;
+    clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 75% 100%, 0% 100%);
+    border-radius: 5px;
+    font-weight: 500;
+    padding: 2%;
+    margin: 5% 0%;
+  }
+  
+  .header-reverse {
+    color: #F0F1F2;
+    background-color: #5259D9;
+    clip-path: polygon(10% 100%, 75% 100%, 100% 100%, 100% 0%, 0% 0%);
+    border-radius: 5px;
+    text-align: end;
+    font-weight: 500;
+    padding: 2%;
+    margin: 5% 0%;
+  }
+  

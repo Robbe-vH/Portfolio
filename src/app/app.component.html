@@ -33,6 +33,9 @@
         <h3 (click)="ClickWPL3()">WPL3</h3>
       </li>
       <li id="baritem">
+        <h3 (click)="ClickWPL4()">WPL4</h3>
+      </li>
+      <li id="baritem">
         <h3 (click)="ClickContact()">Contact</h3>
       </li>
     </ul>
@@ -55,6 +58,8 @@
     <projects-portfolio *ngIf="projectsIsClicked" class="projects-pagina"></projects-portfolio>
     <portfolio-ContactPagina *ngIf="contactIsClicked" class="contact-pagina"></portfolio-ContactPagina>
     <wpl3 *ngIf="wpl3IsClicked"></wpl3>
+    <wpl4 *ngIf="wpl4IsClicked"></wpl4>
+
 
   </div>
 

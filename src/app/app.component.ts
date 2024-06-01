@@ -16,7 +16,8 @@ export class AppComponent {
   projectsIsClicked = false;
   mobielNavIsClicked = false;
   contactIsClicked = false;
-  wpl3IsClicked: boolean = true;
+  wpl3IsClicked: boolean = false;
+  wpl4IsClicked: boolean = true;
 
   //Alle andere pagina's op false en zichzelf op true zetten
 
@@ -25,6 +26,7 @@ export class AppComponent {
     this.wpl3IsClicked = false;
     this.projectsIsClicked = false;
     this.resumeIsClicked = true;
+    this.wpl4IsClicked = false;
   }
 
   ClickProjects(): void {
@@ -32,6 +34,7 @@ export class AppComponent {
     this.wpl3IsClicked = false;
     this.resumeIsClicked = false;
     this.projectsIsClicked = true;
+    this.wpl4IsClicked = false;
   }
 
   ClickContact(): void {
@@ -39,6 +42,7 @@ export class AppComponent {
     this.resumeIsClicked = false;
     this.projectsIsClicked = false;
     this.contactIsClicked = true;
+    this.wpl4IsClicked = false;
   }
 
   ClickWPL3() {
@@ -46,8 +50,16 @@ export class AppComponent {
     this.projectsIsClicked = false;
     this.contactIsClicked = false;
     this.wpl3IsClicked = true;
+    this.wpl4IsClicked = false;
   }
 
+  ClickWPL4() {
+    this.resumeIsClicked = false;
+    this.projectsIsClicked = false;
+    this.contactIsClicked = false;
+    this.wpl3IsClicked = false;
+    this.wpl4IsClicked = true;
+  }
 // show / hide functie
   DropDown(): void {
     this.mobielNavIsClicked = !this.mobielNavIsClicked
